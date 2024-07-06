@@ -1,10 +1,9 @@
 import { useState } from 'react'
+
 import logo from './assets/logo.png';
 import whatsapp from './assets/whatsapp.png';
 import phone from './assets/phone.png';
-import menu from './assets/menu.png';
 import persona from './assets/persona.png';
-
 
 function App() {
   return (
@@ -58,7 +57,11 @@ function App() {
             <textarea type='text' placeholder='' className='w-full p-3 rounded border-2 mt-2 focus:border-customAzul focus:outline-none'/>
           </div>
 
-          <button type='submit' className='w-full p-3 rounded bg-customAzul text-white mt-5'>Buscar</button>  {/* Button styling can be customized according to your needs */}
+          <button type='submit' className='w-full p-3 rounded bg-customAzul text-white mt-5'>
+           <div className='flex gap-3 justify-center'>
+            <p className='text-base font-sans font-semibold'>Buscar profesional</p>
+           </div>
+          </button>  {/* Button styling can be customized according to your needs */}
            
           <div>
             <p className='text-center font-sans text-xs pt-3 text-gray-400 pb-10'>Tu información está segura con nosotros. Utilizamos tecnologías avanzadas para proteger tus datos y nunca los compartiremos sin tu consentimiento.</p>
