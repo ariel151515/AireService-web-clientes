@@ -2,12 +2,24 @@ import { useState } from 'react'
 import logo from './assets/logo.png';
 import whatsapp from './assets/whatsapp.png';
 import phone from './assets/phone.png';
+import menu from './assets/menu.png';
+import persona from './assets/persona.png';
+
 
 function App() {
   return (
     <div className='max-w-[520px] items-center m-auto'>
-       <section className='p-5'>
-        <img src={logo} alt="Logo" className='m-auto pb-10 pt-10'/> 
+
+        <div className='bg-white w-full flex justify-center items-center'>
+           <div><img src={logo} alt="Logo" className='m-auto pt-5' width="100" /></div>
+        </div>
+
+       <div className="w-full text-center pt-6">
+        <p className='font-sans text-xl font-bold'>Solicita un Profesional de Confianza</p>
+        <p className='font-sans text-base'>Rellena el formulario y obtén al instante una lista de expertos disponibles.</p>
+       </div>
+
+       <section className='px-5'>
         <form>
           <div className='w-full pt-5'>
             <label className='font-sans text-sm'>Nombre*</label>
@@ -42,12 +54,17 @@ function App() {
           </div>
 
           <div className='w-full pt-5'>
-            <label className='font-sans text-sm'>Correo electrónico*</label>
-            <textarea type='text' placeholder='Escribe tu correo electrónico' className='w-full p-3 rounded border-2 mt-2 focus:border-customAzul focus:outline-none'/>
+            <label className='font-sans text-sm'>Escriba brevemente para qué requiere*</label>
+            <textarea type='text' placeholder='' className='w-full p-3 rounded border-2 mt-2 focus:border-customAzul focus:outline-none'/>
           </div>
 
           <button type='submit' className='w-full p-3 rounded bg-customAzul text-white mt-5'>Buscar</button>  {/* Button styling can be customized according to your needs */}
-          <p className='text-center text-sm text-balance font-semibold pt-5'>Resultados para Servicio técnico en aire acondicionado</p>  {/* Terms & Conditions link can be customized according to your needs */}
+           
+          <div>
+            <p className='text-center font-sans text-xs pt-5 text-gray-400 pb-10'>Tu información está segura con nosotros. Utilizamos tecnologías avanzadas para proteger tus datos y nunca los compartiremos sin tu consentimiento.</p>
+          </div>
+         
+          <p className='text-center text-sm text-balance font-semibold pt-2 pb-5'>Resultados para Servicio técnico en aire acondicionado</p>  {/* Terms & Conditions link can be customized according to your needs */}
         </form>
       </section>
 
@@ -55,55 +72,70 @@ function App() {
      <div className='w-full px-5 pb-10'>
         <table className="w-full">
           <thead>
-            <tr className='border-t p-1'>
-              <th className='border-t p-1 font-sans text-base'>Nombre</th>
-              <th className='border-t p-1 font-sans text-base'>Teléfono</th>
-              <th className='border-t p-1 font-sans text-base'>Whatsapp</th>
+            <tr className='border-t bg-slate-100'>
+              <th className='font-sans text-base py-2'>Profesional</th>
+              <th className='font-sans text-base'>Teléfono</th>
+              <th className='font-sans text-base'>Whatsapp</th>
             </tr>
           </thead>
           <tbody>
-            <tr className='border-t p-1'>
-              <td className='border-t font-sans font-semibold text-sm'>Ariel Gentile</td>
-              <td className='border-t p-1'>
-                 <button className='flex gap-2 p-2 bg-sky-600 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
-                  <div><img src={phone} alt="WhatsApp" width="20"/></div>
-                  <div className='font-sans text-sm'>Llamar aqui</div>
+            <tr className='border-t'>
+              <td className='border-t font-sans font-semibold text-sm py-3 px-1'>
+                  <div className='flex items-center gap-3'>
+                      <div className='w-[36px]'><img src={persona} alt='' /></div>
+                      <div className='font-sans text-xs'>Ariel Gentile</div>
+                  </div>
+                </td>
+              <td className='border-t p-3'>
+                 <button className='flex gap-1 p-2 bg-slate-400 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
+                  <div><img src={phone} alt="WhatsApp" width="14"/></div>
+                  <div className='font-sans text-xs'>Llamar aqui</div>
                  </button>
               </td>
-              <td className='border-t p-1 font-sans text-base'>
-                 <button className='flex gap-2 p-2 bg-lime-700 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
+              <td className='border-t font-sans text-base'>
+                 <button className='flex gap-1 p-2 bg-lime-700 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
                   <div><img src={whatsapp} alt="WhatsApp" width="20"/></div>
-                  <div className='font-sans text-sm'>Contactar</div>
+                  <div className='font-sans text-xs'>Contactar</div>
                  </button>
               </td>
             </tr>
-            <tr className='border-t p-1'>
-              <td className='border-t font-sans font-semibold text-sm'>Pedro Molina</td>
-              <td className='border-t p-1 font-sans text-base'>
-                   <button className='flex gap-2 p-2 bg-sky-600 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
-                   <div><img src={phone} alt="WhatsApp" width="20"/></div>
-                   <div className='font-sans text-sm'>Llamar aqui</div>
-                   </button>
+            <tr className='border-t p-3'>
+            <td className='border-t font-sans font-semibold text-sm py-3 px-1'>
+                  <div className='flex items-center gap-3'>
+                      <div className='w-[36px]'><img src={persona} alt='' /></div>
+                      <div className='font-sans text-xs'>Ariel Gentile</div>
+                  </div>
+                </td>
+              <td className='border-t p-3'>
+                 <button className='flex gap-1 p-2 bg-slate-400 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
+                  <div><img src={phone} alt="WhatsApp" width="14"/></div>
+                  <div className='font-sans text-xs'>Llamar aqui</div>
+                 </button>
               </td>
-              <td className='border-t p-1 font-sans text-base'>
-                  <button className='flex gap-2 p-2 bg-lime-700 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
-                  <div><img src={whatsapp} alt="WhatsApp" width="20"/></div>
-                  <div className='font-sans text-sm'>Contactar</div>
+              <td className='border-t p-0 font-sans text-base'>
+                  <button className='flex gap-1 p-2 bg-lime-700 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
+                   <div><img src={whatsapp} alt="WhatsApp" width="20" /></div>
+                   <div className='font-sans text-xs'>Contactar</div>
                   </button>
               </td>
             </tr>
             <tr className='border-t'>
-              <td className='border-t font-semibold text-sm'>Juan Medaño</td>
-              <td className='border-t font-sans text-base'>
-                  <button className='flex gap-2 p-2 bg-sky-600 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
-                  <div><img src={phone} alt="WhatsApp" width="20" /></div>
-                  <div className='font-sans text-sm'>Llamar aqui</div>
-                  </button>
+            <td className='border-t font-sans font-semibold text-sm py-3 px-1'>
+                  <div className='flex items-center gap-3'>
+                      <div className='w-[36px]'><img src={persona} alt='' /></div>
+                      <div className='font-sans text-xs'>Ariel Gentile</div>
+                  </div>
+                </td>
+              <td className='border-t p-3'>
+                 <button className='flex gap-1 p-2 bg-slate-400 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
+                  <div><img src={phone} alt="WhatsApp" width="14"/></div>
+                  <div className='font-sans text-xs'>Llamar aqui</div>
+                 </button>
               </td>
-              <td className='border-t p-1 font-sans text-base'>
-                   <button className='flex gap-2 p-2 bg-lime-700 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
-                   <div><img src={whatsapp} alt="WhatsApp" width="20" /></div>
-                   <div className='font-sans text-sm'>Contactar</div>
+              <td className='border-t p-0 font-sans text-base'>
+                   <button className='flex gap-1 p-2 bg-lime-700 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
+                      <div><img src={whatsapp} alt="WhatsApp" width="20" /></div>
+                      <div className='font-sans text-xs'>Contactar</div>
                    </button>
               </td>
             </tr>
@@ -111,7 +143,7 @@ function App() {
          </table>
      </div>
  </div>
-    
+      <p className='text-center font-sans text-xs pt-5 text-gray-400 pb-5'>Todos los derechos reservados Airecenter © 2024</p>
     </div>
   )
 }
