@@ -14,7 +14,7 @@ function App() {
            <div><img src={logo} alt="Logo" className='m-auto pt-5' width="100" /></div>
         </div>
 
-       <div className="w-full text-center pt-6">
+       <div className="w-full text-center pt-10 px-5">
         <p className='font-sans text-xl font-bold'>Solicita un Profesional de Confianza</p>
         <p className='font-sans text-base'>Rellena el formulario y obtén al instante una lista de expertos disponibles.</p>
        </div>
@@ -94,7 +94,7 @@ function App() {
               </td>
               <td className='border-t font-sans text-base'>
                  <button className='flex gap-1 p-2 bg-lime-700 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
-                  <div><img src={whatsapp} alt="WhatsApp" width="20"/></div>
+                  <div><img src={whatsapp} alt="WhatsApp" width="14"/></div>
                   <div className='font-sans text-xs'>Contactar</div>
                  </button>
               </td>
@@ -114,7 +114,7 @@ function App() {
               </td>
               <td className='border-t p-0 font-sans text-base'>
                   <button className='flex gap-1 p-2 bg-lime-700 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
-                   <div><img src={whatsapp} alt="WhatsApp" width="20" /></div>
+                   <div><img src={whatsapp} alt="WhatsApp" width="14" /></div>
                    <div className='font-sans text-xs'>Contactar</div>
                   </button>
               </td>
@@ -134,7 +134,7 @@ function App() {
               </td>
               <td className='border-t p-0 font-sans text-base'>
                    <button className='flex gap-1 p-2 bg-lime-700 rounded text-white font-sans text-base w-[100%] items-center justify-center' onClick={null}>
-                      <div><img src={whatsapp} alt="WhatsApp" width="20" /></div>
+                      <div><img src={whatsapp} alt="WhatsApp" width="14" /></div>
                       <div className='font-sans text-xs'>Contactar</div>
                    </button>
               </td>
