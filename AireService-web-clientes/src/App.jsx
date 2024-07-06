@@ -61,7 +61,7 @@ function App() {
           <button type='submit' className='w-full p-3 rounded bg-customAzul text-white mt-5'>Buscar</button>  {/* Button styling can be customized according to your needs */}
            
           <div>
-            <p className='text-center font-sans text-xs pt-5 text-gray-400 pb-10'>Tu información está segura con nosotros. Utilizamos tecnologías avanzadas para proteger tus datos y nunca los compartiremos sin tu consentimiento.</p>
+            <p className='text-center font-sans text-xs pt-3 text-gray-400 pb-10'>Tu información está segura con nosotros. Utilizamos tecnologías avanzadas para proteger tus datos y nunca los compartiremos sin tu consentimiento.</p>
           </div>
          
           <p className='text-center text-sm text-balance font-semibold pt-2 pb-5'>Resultados para Servicio técnico en aire acondicionado</p>  {/* Terms & Conditions link can be customized according to your needs */}
